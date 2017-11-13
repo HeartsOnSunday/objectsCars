@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: darkgray;
+            font-family: charter, sans-serif;
+        }
+        .well {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">    
+        <div class="container-fluid text-center" id="banner"> 
+            <h1>Business Name</h1>
+            <p id="name"></p>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="well">
+                                <h3>Car Type</h3>
+                                <p id="eCars"></p>
+                                <p id="midCars"></p>
+                                <button class="btn btn-primary" onclick="checkA()">Check Availability</button>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="well">
+                                <h3>Available Economy Cars</h3> 
+                                <p id="eAvail"></p>
+                                <button class="btn btn-success" onclick="rentEco()">Rent Economy Cars</button>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="well">
+                                <h3>Available Midsize Cars</h3>
+                                <p id="mAvail"></p>
+                                <button class="btn btn-primary" onclick="rentMid()">Rent Midsize Cars</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="ojbCars.js"></script>
+</body>
+</html>
